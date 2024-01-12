@@ -9,7 +9,7 @@ def play(x=3):
 def play_box(x):
     return render_template('index.html', x = x)
 
-@app.route('/play/<int:x>/<string:color>')
+@app.route('/play/<int:x>/<color>')
 def play_boxes(x, color):
     return render_template('index.html', x = x, color = color)
 
